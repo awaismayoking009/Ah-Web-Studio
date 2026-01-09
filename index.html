@@ -1,115 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>AH Premium Web Studio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AH Premium Web Studio | Elite Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- LOADER / WELCOME -->
-<div id="loader">
-  <h1>Welcome To <span>AH Web Studio</span></h1>
-  <p>Please wait, loading premium experience…</p>
-</div>
-
-<!-- HEADER -->
-<header>
-  <div class="left">
-    <img src="assets/images/logo.png" class="logo">
-    <h2 class="brand">AH Premium Web Studio</h2>
-  </div>
-
-  <div class="right">
-    <input type="text" class="search" placeholder="Search...">
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
+    <div id="loader">
+        <div class="loader-box">
+            <h1 class="glitch" data-text="AH STUDIO">AH STUDIO</h1>
+            <div class="loading-bar"><span></span></div>
+            <p>Please wait loading...</p>
+        </div>
     </div>
-  </div>
 
-  <nav id="nav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Team</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+    <div class="main-content" style="background-image: url('BACK1.jpg');">
+        
+        <header>
+            <div class="header-left">
+                <img src="logo.png" alt="AH Logo" class="main-logo">
+                <h1 class="neon-text">AH Premium Web Studio</h1>
+            </div>
 
-<!-- BACKGROUND -->
-<div class="main-bg"></div>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" id="mainSearch" placeholder="Search services...">
+                    <i class="fas fa-search" onclick="searchFunction()"></i>
+                </div>
+                <div class="menu-trigger" onclick="toggleNav()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </header>
 
-<!-- CODING -->
-<section class="section reveal">
-  <img src="assets/images/coding.jpg">
-  <div>
-    <h2>Custom Coding Solutions</h2>
-    <p>Secure, fast and scalable hand-written code designed for premium clients.</p>
-  </div>
-</section>
+        <nav id="sideNav">
+            <div class="nav-overlay" onclick="toggleNav()"></div>
+            <div class="nav-content">
+                <span class="close-nav" onclick="toggleNav()">&times;</span>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<!-- WORDPRESS -->
-<section class="section reveal reverse">
-  <img src="assets/images/wordpress.jpg">
-  <div>
-    <h2>WordPress Development</h2>
-    <p>High-performance WordPress websites with custom themes & security.</p>
-  </div>
-</section>
+        <section class="premium-box fade-in" id="services">
+            <div class="glass-card">
+                <img src="coding_img.jpg" alt="Coding">
+                <div class="card-info">
+                    <h2>Advanced Coding</h2>
+                    <p>Clean, efficient, and high-performance custom code for elite platforms.</p>
+                </div>
+            </div>
 
-<!-- VIDEO -->
-<section class="video-section reveal">
-  <h2>Advanced Custom Code</h2>
-  <video src="assets/video/awais-video.mp4" autoplay muted loop playsinline></video>
-  <h3>Secure • Optimized • Premium Architecture</h3>
-</section>
+            <div class="glass-card">
+                <img src="wordpress_img.jpg" alt="WordPress">
+                <div class="card-info">
+                    <h2>Premium WordPress</h2>
+                    <p>Next-gen WordPress architecture with lightning speed and SEO.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- TEAM -->
-<section class="team-section reveal">
-  <h2>Our Team</h2>
+        <section class="video-container fade-in">
+            <h2 class="section-title">Custom Code in Action</h2>
+            <div class="video-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="custom_code_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h3 class="video-caption">Innovation Through Code</h3>
+        </section>
 
-  <div class="team-grid">
-    <div class="card"><img src="assets/images/awais.jpg"><h3>Awais Mayo</h3><span>Founder</span></div>
-    <div class="card"><img src="assets/images/mahoor.jpg"><h3>Mahnoor Awais</h3><span>Director</span></div>
-    <div class="card"><img src="assets/images/haseeb.jpg"><h3>Haseeb DLP</h3><span>Co-Founder</span></div>
-    <div class="card"><img src="assets/images/azqa.jpg"><h3>Azqa Haseeb</h3><span>Developer</span></div>
-    <div class="card"><img src="assets/images/iqra.jpg"><h3>Iqra Raza</h3><span>Designer</span></div>
-    <div class="card"><img src="assets/images/akram.jpg"><h3>Akram MD</h3><span>Engineer</span></div>
-    <div class="card"><img src="assets/images/nomi.jpg"><h3>Nomi DLP</h3><span>SEO Expert</span></div>
-  </div>
-</section>
+        <section class="team-section" id="team">
+            <h2 class="section-title">The Masterminds</h2>
+            <div class="team-grid">
+                <div class="member-card main-owner">
+                    <img src="Awais_Mayo.jpg" alt="Awais Mayo">
+                    <h3>Awais Mayo</h3>
+                    <p>Founder & Lead Developer</p>
+                </div>
+                <div class="member-card">
+                    <img src="Mahnoor_Awais.jpg" alt="Mahnoor Awais">
+                    <h3>Mahnoor Awais</h3>
+                    <p>Creative Director</p>
+                </div>
+                <div class="member-card">
+                    <img src="Haseeb_DLP.jpg" alt="Haseeb DLP">
+                    <h3>Haseeb DLP</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="member-card">
+                    <img src="Azqa_Haseeb.jpg" alt="Azqa Haseeb">
+                    <h3>Azqa Haseeb</h3>
+                    <p>Senior Developer</p>
+                </div>
+                <div class="member-card">
+                    <img src="Azqa.jpg" alt="Azqa">
+                    <h3>Azqa</h3>
+                    <p>UI/UX Specialist</p>
+                </div>
+                <div class="member-card">
+                    <img src="Iqra_Raza.jpg" alt="Iqra Raza">
+                    <h3>Iqra Raza</h3>
+                    <p>Support Lead</p>
+                </div>
+                <div class="member-card">
+                    <img src="Akram_Md.jpg" alt="Akram Md">
+                    <h3>Akram Md</h3>
+                    <p>Backend Expert</p>
+                </div>
+                <div class="member-card">
+                    <img src="Nomi_Dlp.jpg" alt="Nomi Dlp">
+                    <h3>Nomi Dlp</h3>
+                    <p>Quality Analyst</p>
+                </div>
+            </div>
+        </section>
 
-<!-- SKILLS -->
-<section class="skills reveal">
-  <h2>Our Skills</h2>
-  <div class="skills-grid">
-    <div class="skill"><img src="assets/images/skill1.png"><h4>HTML / CSS</h4><p>⭐⭐⭐⭐⭐</p></div>
-    <div class="skill"><img src="assets/images/skill2.png"><h4>JavaScript</h4><p>⭐⭐⭐⭐⭐</p></div>
-    <div class="skill"><img src="assets/images/skill3.png"><h4>WordPress</h4><p>⭐⭐⭐⭐⭐</p></div>
-    <div class="skill"><img src="assets/images/skill4.png"><h4>Security</h4><p>⭐⭐⭐⭐⭐</p></div>
-    <div class="skill"><img src="assets/images/skill5.png"><h4>SEO</h4><p>⭐⭐⭐⭐⭐</p></div>
-  </div>
-</section>
+        <section class="skills-section" id="skills">
+            <h2 class="section-title">Our Technical Arsenal</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <img src="html_css.png" alt="Skill">
+                    <h3>Web Dev</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span class="rate">$60/hr</span>
+                </div>
+                <div class="skill-box">
+                    <img src="js_node.png" alt="Skill">
+                    <h3>Logic Design</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span class="rate">$85/hr</span>
+                </div>
+            </div>
+        </section>
 
-<!-- COMPANY -->
-<section class="company reveal">
-  <img src="assets/images/company.jpg">
-  <div>
-    <h2>About Our Company</h2>
-    <p>We build elite-level websites that impress clients and grow businesses.</p>
-  </div>
-</section>
+        <section class="about-section" id="about">
+            <div class="about-flex">
+                <div class="about-img">
+                    <img src="company_main.jpg" alt="AH Company">
+                </div>
+                <div class="about-text">
+                    <h2>AH Premium Studio Excellence</h2>
+                    <p>We are a global powerhouse in web development, creating digital experiences that leave a lasting impact. Our code is our signature.</p>
+                    <h3>Why Choose Us?</h3>
+                    <p>Detailed perfection, 24/7 premium support, and high-conversion designs that make your business stand out globally.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- WHY -->
-<section class="why reveal">
-  <h2>Why Choose Us?</h2>
-  <p>Premium design, clean code, security, speed and professional support.</p>
-</section>
+        <div class="thanks-footer fade-in">
+            <h2 class="moving-text">Thanks For Visiting Our Home Page</h2>
+        </div>
 
+        <a href="https://wa.me/923049791389" class="wa-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+              </html>
+                      
 <!-- THANKS -->
 <section class="thanks reveal">
   <h2>Thanks For Visiting Our Home Page</h2>
