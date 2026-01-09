@@ -1,0 +1,71 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins;color:#fff;background:#000}
+
+.main-bg{
+position:fixed;inset:0;
+background:url("assets/images/back1.jpg") center/cover;
+filter:blur(6px);
+z-index:-1;
+}
+
+#loader{
+position:fixed;inset:0;
+background:#000;display:flex;
+flex-direction:column;
+align-items:center;justify-content:center;
+z-index:9999
+}
+#loader span{color:#00f2ff}
+
+header{
+position:fixed;width:100%;
+top:0;padding:15px 8%;
+display:flex;justify-content:space-between;
+background:rgba(0,0,0,.7);z-index:100
+}
+
+.logo{height:45px}
+.brand{font-family:Orbitron;color:#00f2ff}
+
+.menu-toggle span{
+display:block;width:25px;height:3px;
+background:#00f2ff;margin:5px 0
+}
+
+nav{
+position:fixed;right:-100%;
+top:70px;background:#000;
+width:200px;transition:.4s
+}
+nav a{display:block;padding:15px;color:#fff;text-decoration:none}
+nav.show{right:0}
+
+.section,.video-section,.team-section,.skills,.company,.why,.thanks{
+padding:120px 10%;display:flex;gap:40px;align-items:center
+}
+
+.reverse{flex-direction:row-reverse}
+
+img{max-width:100%;border-radius:15px}
+
+.team-grid,.skills-grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px
+}
+
+.card,.skill{
+background:#0b0b0b;padding:20px;border-radius:15px;
+text-align:center;transition:.4s
+}
+.card:hover,.skill:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00f2ff
+}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+font-size:28px;text-decoration:none
+}
+
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:none}
