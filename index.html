@@ -2,114 +2,125 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>AH Premium Web Studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AH Premium Studio</title>
+
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- LOADER -->
+<!-- LOADER / WELCOME -->
 <div id="loader">
-  <h1>AH <span>STUDIO</span></h1>
-  <p>Initializing Premium Systems...</p>
+  <h1>Welcome To <span>AH Web Studio</span></h1>
+  <p>Please wait, loading premium experience…</p>
 </div>
 
 <!-- HEADER -->
 <header>
-  <img src="assets/images/logo.png" class="logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+  <div class="left">
+    <img src="assets/images/logo.png" class="logo">
+    <h2 class="brand">AH Premium Web Studio</h2>
+  </div>
+
+  <div class="right">
+    <input type="text" class="search" placeholder="Search...">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Team</a>
+    <a href="#">Contact</a>
   </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero reveal">
-  <img src="assets/images/hero.jpg" alt="AH Studio Hero">
-  <div class="hero-text">
-    <h1>AH PREMIUM STUDIO</h1>
-    <p>Elite Web • WordPress • Custom Code Solutions</p>
+<!-- BACKGROUND -->
+<div class="main-bg"></div>
+
+<!-- CODING -->
+<section class="section reveal">
+  <img src="assets/images/coding.jpg">
+  <div>
+    <h2>Custom Coding Solutions</h2>
+    <p>Secure, fast and scalable hand-written code designed for premium clients.</p>
   </div>
 </section>
 
-<!-- CODING / SERVICES SECTION -->
-<section class="services reveal">
-  <h2>Our Coding Expertise</h2>
-  <p class="section-detail">We craft hand-written HTML5, CSS3, and JavaScript code for high-performance websites. Every line optimized for speed, security, and user experience.</p>
-  <div class="service-cards">
-    <div class="card">
-      <h3>Custom Code</h3>
-      <p>Unique, optimized, and clean code for every project.</p>
-    </div>
-    <div class="card">
-      <h3>Performance</h3>
-      <p>Websites that load under 1 second and run smooth.</p>
-    </div>
-    <div class="card">
-      <h3>SEO & Security</h3>
-      <p>Built-in SEO best practices and advanced security layers.</p>
-    </div>
+<!-- WORDPRESS -->
+<section class="section reveal reverse">
+  <img src="assets/images/wordpress.jpg">
+  <div>
+    <h2>WordPress Development</h2>
+    <p>High-performance WordPress websites with custom themes & security.</p>
   </div>
 </section>
 
-<!-- WORDPRESS SECTION -->
-<section class="wordpress reveal">
-  <h2>Premium WordPress Solutions</h2>
-  <p class="section-detail">We create fully bespoke WordPress environments. No templates, full customization, lightning-fast backend, and high-end aesthetics.</p>
-  <div class="wordpress-images">
-    <img src="assets/images/wordpress-dashboard.jpg" alt="WordPress Dashboard">
-    <img src="assets/images/wordpress-custom.jpg" alt="Custom WordPress">
-  </div>
-</section>
-
-<!-- VIDEO SHOWCASE -->
+<!-- VIDEO -->
 <section class="video-section reveal">
-  <h2>Our Work in Action</h2>
-  <video src="assets/video/showcase.mp4" autoplay muted loop playsinline></video>
-</section>
-
-<!-- STATS -->
-<section class="stats reveal">
-  <div class="stat">
-    <h3>9+</h3>
-    <p>YEARS EXP</p>
-  </div>
-  <div class="stat">
-    <h3>500+</h3>
-    <p>PROJECTS</p>
-  </div>
-  <div class="stat">
-    <h3>100%</h3>
-    <p>TRUST</p>
-  </div>
-  <div class="stat">
-    <h3>24/7</h3>
-    <p>SUPPORT</p>
-  </div>
+  <h2>Advanced Custom Code</h2>
+  <video src="assets/video/awais-video.mp4" autoplay muted loop playsinline></video>
+  <h3>Secure • Optimized • Premium Architecture</h3>
 </section>
 
 <!-- TEAM -->
 <section class="team-section reveal">
-  <h2>Our Premium Team</h2>
+  <h2>Our Team</h2>
+
   <div class="team-grid">
-    <!-- Owners -->
-    <div class="card">
-      <img src="assets/images/awais.jpg" alt="Awais Mayo">
-      <h3>Awais Mayo</h3>
-      <span>Founder</span>
-      <p>Lead Systems Engineer, oversees every line of code with precision.</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/haseeb.jpg" alt="Haseeb Ahmad">
-      <h3>Haseeb Ahmad</h3>
-      <span>Co-Founder</span>
-      <p>Creative Director, responsible for elite visual design and user experience.</p>
-    </div>
-    <!-- Members -->
-    <div class="card">
-      <img src="assets/images/team1.jpg" alt="Azqa Haseeb">
-      <h3>Azqa Haseeb</h3>
+    <div class="card"><img src="assets/images/awais.jpg"><h3>Awais Mayo</h3><span>Founder</span></div>
+    <div class="card"><img src="assets/images/mahoor.jpg"><h3>Mahnoor Awais</h3><span>Director</span></div>
+    <div class="card"><img src="assets/images/haseeb.jpg"><h3>Haseeb DLP</h3><span>Co-Founder</span></div>
+    <div class="card"><img src="assets/images/azqa.jpg"><h3>Azqa Haseeb</h3><span>Developer</span></div>
+    <div class="card"><img src="assets/images/iqra.jpg"><h3>Iqra Raza</h3><span>Designer</span></div>
+    <div class="card"><img src="assets/images/akram.jpg"><h3>Akram MD</h3><span>Engineer</span></div>
+    <div class="card"><img src="assets/images/nomi.jpg"><h3>Nomi DLP</h3><span>SEO Expert</span></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills reveal">
+  <h2>Our Skills</h2>
+  <div class="skills-grid">
+    <div class="skill"><img src="assets/images/skill1.png"><h4>HTML / CSS</h4><p>⭐⭐⭐⭐⭐</p></div>
+    <div class="skill"><img src="assets/images/skill2.png"><h4>JavaScript</h4><p>⭐⭐⭐⭐⭐</p></div>
+    <div class="skill"><img src="assets/images/skill3.png"><h4>WordPress</h4><p>⭐⭐⭐⭐⭐</p></div>
+    <div class="skill"><img src="assets/images/skill4.png"><h4>Security</h4><p>⭐⭐⭐⭐⭐</p></div>
+    <div class="skill"><img src="assets/images/skill5.png"><h4>SEO</h4><p>⭐⭐⭐⭐⭐</p></div>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section class="company reveal">
+  <img src="assets/images/company.jpg">
+  <div>
+    <h2>About Our Company</h2>
+    <p>We build elite-level websites that impress clients and grow businesses.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why reveal">
+  <h2>Why Choose Us?</h2>
+  <p>Premium design, clean code, security, speed and professional support.</p>
+</section>
+
+<!-- THANKS -->
+<section class="thanks reveal">
+  <h2>Thanks For Visiting Our Home Page</h2>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/923049791389" class="whatsapp">💬</a>
+
+<script src="script.js"></script>
+</body>
+                         </html>      <h3>Azqa Haseeb</h3>
       <p>Expert Frontend Developer, crafts smooth interfaces.</p>
     </div>
     <div class="card">
