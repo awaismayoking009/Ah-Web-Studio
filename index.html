@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<div class="video-container">
-    <video autoplay muted loop playsinline id="myVideo">
-        <source src="BACK_VIDEO.mp4" type="video/mp4">
-    </video>
-    <div class="video-overlay"></div>
-</div>
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="BACK_VIDEO.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
     
     <div id="loader">
         <div class="loader-box">
@@ -24,18 +24,16 @@
         </div>
     </div>
 
-    <div class="main-content;">
-        
+    <div class="main-content">
         <header>
             <div class="header-left">
                 <img src="logo.png" alt="AH Logo" class="main-logo">
                 <h1 class="neon-text">AH Premium Web Studio</h1>
             </div>
-
             <div class="header-right">
                 <div class="search-container">
                     <input type="text" id="mainSearch" placeholder="Search services...">
-                    <i class="fas fa-search" onclick="searchFunction()"></i>
+                    <i class="fas fa-search"></i>
                 </div>
                 <div class="menu-trigger" onclick="toggleNav()">
                     <span></span><span></span><span></span>
@@ -48,11 +46,9 @@
             <div class="nav-content">
                 <span class="close-nav" onclick="toggleNav()">&times;</span>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Our Team</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,7 +61,6 @@
                     <p>Clean, efficient, and high-performance custom code for elite platforms.</p>
                 </div>
             </div>
-
             <div class="glass-card">
                 <img src="wordpress_img.jpg" alt="WordPress">
                 <div class="card-info">
@@ -75,75 +70,67 @@
             </div>
         </section>
 
-        <section class="video-container fade-in">
-            <h2 class="section-title">Custom Code in Action</h2>
-            <div class="video-wrapper">
-                <video autoplay muted loop playsinline>
-                    <source src="custom_code_video.mp4" type="video/mp4">
-                </video>
+        <section class="cyber-comparison">
+            <div class="cyber-grid">
+                <div class="cyber-card">
+                    <h2 class="cyber-title glitch-text">👉 CUSTOM CODING</h2>
+                    <div class="cyber-lines">
+                        <p>The ultimate DNA of the digital world. Pure, hand-written logic that shatters all limits.</p>
+                        <p>Unmatched speed and unbreakable security.</p>
+                    </div>
+                </div>
+                <div class="cyber-card wp-card">
+                    <h2 class="cyber-title">👉 WORDPRESS</h2>
+                    <div class="cyber-lines">
+                        <p>A pre-built foundation for quick setups. Efficient but often restricted.</p>
+                        <p>Limited by third-party plugins and generic templates.</p>
+                    </div>
+                </div>
             </div>
-            <h3 class="video-caption">Innovation Through Code</h3>
+            <div class="cyber-suggestion">
+                <h1 class="big-suggestion-title">OUR SUGGESTION</h1>
+                <div class="suggestion-content">
+                    <p>Go with <span>CUSTOM CODING</span> if you want a digital empire. Coding is a <strong>Power Signature</strong>.</p>
+                </div>
+            </div>
         </section>
-<section class="cyber-comparison">
-    <div class="cyber-grid">
-        <div class="cyber-card">
-            <h2 class="cyber-title glitch-text">👉 CUSTOM CODING</h2>
-            <div class="cyber-lines">
-                <p>The ultimate DNA of the digital world. Pure, hand-written logic that shatters all limits.</p>
-                <p>Unmatched speed, unbreakable security, and a design that is uniquely yours.</p>
-            </div>
-        </div>
 
-        <div class="cyber-card wp-card">
-            <h2 class="cyber-title">👉 WORDPRESS</h2>
-            <div class="cyber-lines">
-                <p>A pre-built foundation for quick setups. Good for basics, but often heavy and restricted.</p>
-                <p>Limited by third-party plugins and generic templates that anyone can use.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="cyber-suggestion">
-        <h1 class="big-suggestion-title">OUR SUGGESTION</h1>
-        <div class="suggestion-content">
-            <p>Go with <span>CUSTOM CODING</span> if you want a digital empire. WordPress is just a tool, but Coding is a <strong>Power Signature</strong>. It outperforms everything in speed and professional impact.</p>
-        </div>
-    </div>
-</section>
-
-        
         <section class="team-section" id="team">
             <h2 class="section-title">The Masterminds</h2>
             <div class="team-grid">
                 <div class="member-card main-owner">
-                    <img src="Awais_Mayo.jpg" alt="Awais Mayo">
+                    <img src="Awais_Mayo.jpg" alt="Awais">
                     <h3>Awais Mayo</h3>
                     <p>Founder & Lead Developer</p>
                 </div>
                 <div class="member-card">
-                    <img src="Mahnoor_Awais.jpg" alt="Mahnoor Awais">
-                    <h3>Mahnoor Awais</h3>
-                    <p>Creative Director</p>
-                </div>
-                <div class="member-card">
-                    <img src="Haseeb_DLP.jpg" alt="Haseeb DLP">
+                    <img src="Haseeb_DLP.jpg" alt="Haseeb">
                     <h3>Haseeb DLP</h3>
                     <p>Project Manager</p>
                 </div>
-                <div class="member-card">
-                    <img src="Azqa_Haseeb.jpg" alt="Azqa Haseeb">
-                    <h3>Azqa Haseeb</h3>
-                    <p>Senior Developer</p>
                 </div>
-                <div class="member-card">
-                    <img src="Azqa.jpg" alt="Azqa">
-                    <h3>Azqa</h3>
-                    <p>UI/UX Specialist</p>
+        </section>
+
+        <section class="cyber-footer" id="contact">
+            <div class="footer-box">
+                <h2 class="glitch-text">TERMINAL_CONNECTION</h2>
+                <p>Ready to build the future? Systems are online.</p>
+                <a href="https://wa.me/923049791389" class="hacker-btn">INITIATE_WHATSAPP</a>
+                <div class="dev-credits">
+                    <p>Developed by <span class="neon-blue">Awais</span> with <span class="neon-purple">Hasib</span></p>
                 </div>
-                <div class="member-card">
-                    <img src="Iqra_Raza.jpg" alt="Iqra Raza">
-                    <h3>Iqra Raza</h3>
-                    <p>Support Lead</p>
+                <marquee class="thanks-msg">THANKS FOR VISITING OUR HOME PAGE --- AH PREMIUM STUDIO --- INNOVATION THROUGH CODE</marquee>
+            </div>
+        </section>
+
+        <a href="https://wa.me/923049791389" class="wa-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
                 </div>
                 <div class="member-card">
                     <img src="Akram_Md.jpg" alt="Akram Md">
