@@ -6,7 +6,33 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { 
-    background: #000; 
+    /* Full Screen Video Background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* یہ ویڈیو کو سب کے پیچھے رکھے گا */
+    overflow: hidden;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ویڈیو اسکرین کے حساب سے خود کو فٹ کر لے گی */
+    filter: brightness(40%); /* اس سے ویڈیو تھوڑی ڈارک ہو جائے گی تاکہ آپ کا وائٹ ٹیکسٹ صاف نظر آئے */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* ہلکا سا ڈارک شیڈ */
+    }
+    
     color: #fff; 
     font-family: 'Rajdhani', sans-serif;
     overflow-x: hidden;
