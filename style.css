@@ -66,3 +66,10 @@ header {
 
 /* Floating WA */
 .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; color: #fff; z-index: 1000; }
+/* LOADER FIX - اسے ڈالنے سے بڑا لوگو غائب ہو جائے گا */
+#loader {
+    display: none !important; /* یہ لوڈر کو زبردستی بند کر دے گا */
+}
+
+/* اگر آپ چاہتے ہیں کہ لوڈر صرف 2 سیکنڈ کے لیے آئے تو نیچے والا طریقہ اپنائیں، 
+ورنہ ابھی کے لیے اوپر والا 'display: none' ہی بہترین ہے */
