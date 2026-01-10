@@ -99,3 +99,28 @@ header {
     width: 60px; height: 60px; border-radius: 50%; display: flex;
     justify-content: center; align-items: center; color: #fff; font-size: 30px; z-index: 1000;
 }
+/* Team Card Premium Styling */
+.card-reveal {
+    background: rgba(255, 255, 255, 0.05); /* ہلکا شیشہ لک */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.card-reveal:hover {
+    transform: translateY(-10px) scale(1.02); /* ماؤس لے جانے پر کارڈ اوپر اٹھے گا */
+    border-color: var(--neon-blue); /* بارڈر نیلا ہو جائے گا */
+    box-shadow: 0 0 20px var(--neon-blue); /* کارڈ چمکے گا */
+}
+
+.card-reveal img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* گول تصویر */
+    border: 2px solid var(--neon-blue);
+    margin-bottom: 15px;
+              }
+    
