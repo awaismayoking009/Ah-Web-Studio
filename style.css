@@ -1,7 +1,6 @@
 :root {
     --neon-blue: #00f2ff;
     --neon-purple: #bc13fe;
-    --hacker-green: #0f0;
     --dark-bg: #050505;
 }
 
@@ -13,63 +12,49 @@ body {
     overflow-x: hidden;
 }
 
-/* Background Video */
-.video-container {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1;
-}
-#myVideo { width: 100%; height: 100%; object-fit: cover; filter: brightness(30%); }
-.video-overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+/* Video Background */
+.video-container { position: fixed; top: 0; width: 100%; height: 100vh; z-index: -1; }
+#myVideo { width: 100%; height: 100%; object-fit: cover; filter: brightness(35%); }
+.video-overlay { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); }
 
-/* Header & Loader */
+/* Loader Fix - NO IMAGES */
+#loader {
+    position: fixed; width: 100%; height: 100%; background: #000;
+    z-index: 9999; display: flex; justify-content: center; align-items: center;
+}
+.glitch { font-family: 'Orbitron'; font-size: 2.5rem; color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
+.loading-bar { width: 200px; height: 3px; background: #222; margin-top: 20px; position: relative; }
+.loading-bar span { display: block; height: 100%; background: var(--neon-blue); width: 0; animation: load 2s infinite; }
+@keyframes load { 0% { width: 0; } 100% { width: 100%; } }
+
+/* Header & Logo */
 header {
     display: flex; justify-content: space-between; padding: 20px 5%;
-    background: rgba(0,0,0,0.9); border-bottom: 2px solid var(--neon-blue);
+    background: rgba(0,0,0,0.8); border-bottom: 1px solid var(--neon-blue);
     position: fixed; width: 100%; top: 0; z-index: 1000;
 }
-.neon-text { font-family: 'Orbitron'; color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
+.main-logo { width: 50px; height: auto; filter: drop-shadow(0 0 5px var(--neon-blue)); }
+.neon-text { font-family: 'Orbitron'; font-size: 1.2rem; color: var(--neon-blue); }
 
-/* Cyber Section Styling */
-.cyber-comparison { padding: 100px 5%; font-family: 'Orbitron'; }
+/* Cyber Navigation */
+#sideNav .nav-content {
+    position: fixed; right: -300px; top: 0; width: 300px; height: 100%;
+    background: rgba(0,0,0,0.95); border-left: 2px solid var(--neon-blue);
+    padding: 80px 30px; transition: 0.5s; z-index: 1001;
+}
+#sideNav.active .nav-content { right: 0; }
+.nav-links li { list-style: none; margin: 25px 0; }
+.nav-links a { color: #fff; text-decoration: none; font-family: 'Orbitron'; font-size: 1.2rem; transition: 0.3s; }
+.nav-links a:hover { color: var(--neon-blue); text-shadow: 0 0 10px var(--neon-blue); }
+
+/* Content Cards */
 .cyber-card {
-    background: rgba(0,0,0,0.8); border: 2px solid var(--neon-blue);
-    padding: 30px; clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 0 100%);
-    margin-bottom: 20px;
+    background: rgba(0, 242, 255, 0.05); border: 1px solid var(--neon-blue);
+    padding: 30px; margin-top: 50px; clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
 }
-.wp-card { border-color: var(--neon-purple); }
-
 .big-suggestion-title {
-    font-size: 4rem; color: #fff; text-shadow: 0 0 20px var(--neon-blue);
-    margin: 40px 0; text-align: center;
+    font-size: 3.5rem; text-align: center; margin-top: 150px;
+    font-family: 'Orbitron'; text-shadow: 0 0 20px var(--neon-blue);
 }
 
-/* Hacker Footer */
-.cyber-footer {
-    padding: 100px 5%; text-align: center;
-    background: linear-gradient(to top, #000, transparent);
-}
-.footer-box {
-    border: 1px solid var(--neon-blue); padding: 50px;
-    background: rgba(0, 242, 255, 0.05); border-radius: 10px;
-}
-.hacker-btn {
-    display: inline-block; padding: 15px 40px; border: 2px solid var(--neon-blue);
-    color: var(--neon-blue); text-decoration: none; font-family: 'Orbitron';
-    margin-top: 30px; transition: 0.4s;
-}
-.hacker-btn:hover { background: var(--neon-blue); color: #000; box-shadow: 0 0 30px var(--neon-blue); }
-
-.dev-credits { margin-top: 40px; font-family: 'Orbitron'; font-size: 1.2rem; }
-.neon-blue { color: var(--neon-blue); text-shadow: 0 0 5px var(--neon-blue); }
-.neon-purple { color: var(--neon-purple); text-shadow: 0 0 5px var(--neon-purple); }
-
-.thanks-msg { margin-top: 50px; color: rgba(255,255,255,0.2); font-family: 'Orbitron'; font-size: 1rem; }
-
-/* Floating WA */
-.wa-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; color: #fff; z-index: 1000; }
-/* LOADER FIX - اسے ڈالنے سے بڑا لوگو غائب ہو جائے گا */
-#loader {
-    display: none !important; /* یہ لوڈر کو زبردستی بند کر دے گا */
-}
-
-/* اگر آپ چاہتے ہیں کہ لوڈر صرف 2 سیکنڈ کے لیے آئے تو نیچے والا طریقہ اپنائیں، 
-ورنہ ابھی کے لیے اوپر والا 'display: none' ہی بہترین ہے */
+.thanks-msg { margin-top: 100px; color: var(--neon-blue); font-family: 'Orbitron'; opacity: 0.6; }
