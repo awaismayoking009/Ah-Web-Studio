@@ -15,57 +15,75 @@
         </video>
         <div class="video-overlay"></div>
     </div>
-    
-    <div id="loader">
-        <div class="loader-box">
-            <h1 class="glitch" data-text="SYSTEM ONLINE">SYSTEM ONLINE</h1>
-            <div class="loading-bar"><span></span></div>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="AH" class="main-logo">
+            <h1 class="neon-text">AH PREMIUM STUDIO</h1>
         </div>
-    </div>
+        <div class="menu-trigger" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
 
-    <div class="main-content">
-        <header>
-            <div class="header-left">
-                <img src="logo.png" alt="AH" class="main-logo">
-                <h1 class="neon-text">AH PREMIUM STUDIO</h1>
-            </div>
-            <div class="header-right">
-                <div class="menu-trigger" onclick="toggleNav()">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-        </header>
+    <nav id="sideNav">
+        <div class="nav-content">
+            <span class="close-nav" onclick="toggleNav()">&times;</span>
+            <ul class="nav-links">
+                <li><a href="index.html">_HOME</a></li>
+                <li><a href="about.html">_ABOUT</a></li>
+                <li><a href="services.html">_SERVICES</a></li>
+                <li><a href="skills.html">_SKILLS</a></li>
+                <li><a href="contact.html">_CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <nav id="sideNav">
-            <div class="nav-content">
-                <span class="close-nav" onclick="toggleNav()">&times;</span>
-                <ul class="nav-links">
-                    <li><a href="index.html">_HOME</a></li>
-                    <li><a href="about.html">_ABOUT</a></li>
-                    <li><a href="services.html">_SERVICES</a></li>
-                    <li><a href="skills.html">_SKILLS</a></li>
-                    <li><a href="contact.html">_CONTACT</a></li>
-                </ul>
+    <main class="main-content">
+        <section class="cyber-container">
+            <div class="glass-box blue-line">
+                <div class="animated-border"></div>
+                <h2>CUSTOM CODE</h2>
+                <p>High-end secure programming with pure logic and elite performance.</p>
             </div>
-        </nav>
 
-        <section class="hero-section">
-            <h1 class="big-suggestion-title">WELCOME TO THE FUTURE</h1>
-            <p class="cyber-desc">We decode complexity and encode excellence. Your digital empire starts here.</p>
-            <div class="cyber-card">
-                <h2 class="cyber-title">STATUS: ACTIVE</h2>
-                <div class="cyber-lines">
-                    <p>> Connection Secure...</p>
-                    <p>> Protocols Loaded...</p>
-                </div>
+            <div class="glass-box red-line">
+                <div class="animated-border"></div>
+                <h2>WORDPRESS</h2>
+                <p>Premium architecture with blazing speed and customized layouts.</p>
             </div>
         </section>
 
-        <footer class="cyber-footer">
-            <marquee class="thanks-msg">ACCESS GRANTED --- AH PREMIUM STUDIO --- INNOVATION THROUGH CODE --- SYSTEM STABLE</marquee>
-        </footer>
-    </div>
+        <section class="video-showcase">
+            <h2 class="section-title">CODE_IN_ACTION</h2>
+            <div class="video-frame">
+                <video autoplay muted loop playsinline>
+                    <source src="custom_code_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2 class="section-title">ELITE_COMMANDERS</h2>
+            <div class="team-grid">
+                <div class="member-card">
+                    <div class="img-circle">
+                        <img src="Awais_Mayo.jpg" alt="Owner">
+                    </div>
+                    <h3>Awais Mayo</h3>
+                    <p>FOUNDER & CEO</p>
+                </div>
+                <div class="member-card">
+                    <div class="img-circle">
+                        <img src="Haseeb_DLP.jpg" alt="Manager">
+                    </div>
+                    <h3>Haseeb DLP</h3>
+                    <p>PROJECT MANAGER</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
- 
